@@ -11,6 +11,7 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "clsx": "^1.2.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "react": "^18.2.0",
@@ -35,7 +36,9 @@
     "prettier-check": "prettier src --check",
     "prettier:fix": "prettier src --write",
     "postinstall": "husky install",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
@@ -58,15 +61,27 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
+    "@storybook/addon-essentials": "^7.0.23",
+    "@storybook/addon-interactions": "^7.0.23",
+    "@storybook/addon-links": "^7.0.23",
+    "@storybook/blocks": "^7.0.23",
+    "@storybook/preset-create-react-app": "^7.0.23",
+    "@storybook/react": "^7.0.23",
+    "@storybook/react-webpack5": "^7.0.23",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@typescript-eslint/eslint-plugin": "^5.59.11",
     "@typescript-eslint/parser": "^5.59.11",
     "autoprefixer": "^10.4.14",
+    "babel-plugin-named-exports-order": "^0.0.2",
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-storybook": "^0.6.12",
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.0.23",
     "tailwindcss": "^3.3.2"
   },
   "lint-staged": {
