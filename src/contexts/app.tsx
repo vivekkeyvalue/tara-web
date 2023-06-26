@@ -1,8 +1,9 @@
-import { Provider } from 'react-redux';
-import { store } from '../core/store';
-import { HelmetProvider } from 'react-helmet-async';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { ReactNode } from 'react';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
+
+import { store } from '../core/store';
 
 type AppProviderProps = {
   children: ReactNode;
