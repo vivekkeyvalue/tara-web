@@ -1,7 +1,4 @@
-const path = require('path');
-
 module.exports = ({ config }) => {
-
   // Add SVGR Loader
   // ========================================================
   // Remove svg rules from existing webpack rule
@@ -28,6 +25,7 @@ module.exports = ({ config }) => {
         }
       }
     ]
+
     // issuer: {
     //   and: [/\.(ts|tsx|js|jsx|md|mdx)$/]
     // }

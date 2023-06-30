@@ -1,0 +1,23 @@
+.tooltip {
+  @apply bg-background90 text-white rounded-md font-normal text-xs leading-[18px] py-2 px-4;
+  transform: translate(-40%, calc(-100% - 17px - 24px));
+  &:after{
+    @apply content-[''] absolute left-[40%] bottom-[-10px] border-x-[10px] border-t-[12px] border-transparent border-t-background90;
+  }
+}
+
+.tooltip-right {
+  @apply bg-background90 text-white rounded-md font-normal text-xs left-[30px] leading-[18px] py-2 px-4;
+  transform: translate(0, -50%);
+  &:after{
+    @apply content-[''] absolute left-[-14px] rotate-90 top-[35%]  border-x-[10px] border-t-[12px] border-transparent border-t-background90;
+  }
+}
+
+.tooltip-bottom {
+  @apply bg-background90 text-white rounded-md font-normal text-xs top-[30px] leading-[18px] py-2 px-4;
+  transform: translate(-45%, 95%);
+  &:after{
+    @apply content-[''] absolute left-[20%]  top-[-10px] rotate-180 border-x-[10px] border-t-[12px] border-transparent border-t-background90;
+  }
+}
