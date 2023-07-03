@@ -1,15 +1,37 @@
+import {
+  configureStore,
+  PreloadedState,
+  combineReducers
+} from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
-import { configureStore } from '@reduxjs/toolkit';
+import { CurriedGetDefaultMiddleware } from '@reduxjs/toolkit/dist/getDefaultMiddleware';
+import { authApi } from './baseApi';
+import storeLogger from './logger';
 
-export const store = configureStore({
-  reducer: {},
-  //   devTools: import.meta.env.NODE_ENV !== "production",
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware({}).concat([])
+const middlewareList = (getDefaultMiddleware: CurriedGetDefaultMiddleware) => {
+  const list = [authApi.middleware];
+  if (process.env.NODE_ENV === 'development') {
+    list.push(storeLogger);
+  }
+  return getDefaultMiddleware().concat(list);
+};
+
+export const rootReducer = combineReducers({
+  [authApi.reducerPath]: authApi.reducer
 });
 
-// Infer the `RootState` and `AppDispatch` types from the store itself
-export type RootState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch;
+export const setupStore = (preloadedState?: PreloadedState<RootState>) =>
+  configureStore({
+    reducer: rootReducer,
+    middleware: (getDefaultMiddleware: CurriedGetDefaultMiddleware) =>
+      middlewareList(getDefaultMiddleware),
+    preloadedState
+  });
 
+export const store = setupStore({});
+
+export type RootState = ReturnType<typeof rootReducer>;
+export type AppDispatch = typeof store.dispatch;
+export type AppStore = ReturnType<typeof setupStore>;
 export const useAppDispatch: () => AppDispatch = useDispatch;
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
