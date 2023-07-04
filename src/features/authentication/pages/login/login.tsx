@@ -7,8 +7,8 @@ import { validateWithRegexp } from '@utils/generic';
 import testId from '@constants/testId';
 import { ValidationError, LoginRequest, Scalars } from '@types';
 import { HOME } from '@constants/routes';
-import AuthSection from '@features/authentication/components/auth-section/AuthSection';
 import emailRegex from '@constants/regexps';
+import AuthSection from '../../components/auth-section/AuthSection';
 import { useLoginMutation } from '../../queries/AuthQuery';
 
 const LoginPage = () => {
