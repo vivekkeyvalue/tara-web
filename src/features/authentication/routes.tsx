@@ -2,7 +2,7 @@ import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
 import { AuthLayout } from '@components';
-import AUTH from '@constants/routes';
+import { AUTH } from '@constants/routes';
 
 const LoginPage = lazy(() => import('./pages/login/login'));
 

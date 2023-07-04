@@ -28,7 +28,7 @@ const AuthSection = ({
     )}
     {!!title && (
       <h2
-        className="text-h3 mb-2 text-center"
+        className="w-full text-h3 mb-2"
         data-testid={testId.authentication.authSection.title}
       >
         {title}
@@ -36,7 +36,7 @@ const AuthSection = ({
     )}
     {!!description && (
       <p
-        className="text-h5 text-center text-background70"
+        className="w-full text-h5 text-background70"
         data-testid={testId.authentication.authSection.description}
       >
         {description}
