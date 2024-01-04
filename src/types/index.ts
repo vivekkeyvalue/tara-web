@@ -15,6 +15,3 @@ export type Scalars = {
 };
 
 export * from './requests';
-export * from './user';
-export * from './role';
-export * from './region';

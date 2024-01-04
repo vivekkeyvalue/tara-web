@@ -4,7 +4,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 
 import { store } from '../core/store';
-import LocaleProvider from './locale';
 
 type AppProviderProps = {
   children: ReactNode;
@@ -13,9 +12,7 @@ type AppProviderProps = {
 const AppProvider = ({ children }: AppProviderProps) => (
   <Provider store={store}>
     <HelmetProvider>
-      <LocaleProvider>
-        <Router>{children}</Router>
-      </LocaleProvider>
+      <Router>{children}</Router>
     </HelmetProvider>
   </Provider>
 );
