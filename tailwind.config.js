@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-const colors = require('./themes/colors');
 const borderRadius = require('./themes/borderRadius');
 const fontSize = require('./themes/fontSizes');
 
@@ -13,7 +12,10 @@ module.exports = {
         tablet: { min: '481px', max: '1024px' },
         desktop: { min: '1025px' }
       },
-      colors,
+      colors: {
+        bkg: 'hsl(var(--color-bkg) / <alpha-value>)',
+        content: 'hsl(var(--color-content) / <alpha-value>)'
+      },
       borderRadius,
       fontSize,
       borderWidth: {
