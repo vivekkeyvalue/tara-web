@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const storeLogger = (store: any) => (next: any) => (action: any) => {
   console.group(action.type);
   console.info('dispatching', action);

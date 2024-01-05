@@ -14,4 +14,9 @@ export type Scalars = {
   Date: any;
 };
 
+export type TokenResponse = {
+  accessToken: string;
+  refreshToken: string;
+};
+
 export * from './requests';
