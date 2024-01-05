@@ -86,13 +86,14 @@ yarn-error.log*
 
 # Yarn build files
 .yarn/*
-!.yarn/cache
+.yarn/cache
 !.yarn/patches
 !.yarn/releases
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+.yarnrc.yml
 
 # Env
 .env
