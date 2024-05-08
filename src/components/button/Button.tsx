@@ -123,7 +123,7 @@ const Button: React.FC<ButtonProps> = ({
   const getIconStrokeColor = (stroke: string) => {
     let strokeColor: string = stroke;
     if (disabled && variant === 'primary') strokeColor = theme.grey;
-    else if (disabled && variant === 'secondary') strokeColor = theme.grey40;
+    else if (disabled && variant === 'secondary') strokeColor = theme.grey;
     return strokeColor;
   };
 
