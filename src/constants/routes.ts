@@ -9,3 +9,7 @@ export const HOME = {
 export const HOMEWORK_MANAGEMENT = {
   CREATE_HOMEWORK: '/create-homework'
 };
+
+export const DASHBOARD = {
+  DASHBOARD: '/dashboard'
+};

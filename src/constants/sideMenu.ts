@@ -1,13 +1,13 @@
 import { ReactComponent as DashboardIcon } from '@assets/icons/dashboard.svg';
 import { ReactComponent as HomeWorkIcon } from '@assets/icons/homework.svg';
-import { HOMEWORK_MANAGEMENT } from './routes';
+import { DASHBOARD, HOMEWORK_MANAGEMENT } from './routes';
 
 const MENU_ITEMS = [
   {
     id: 1,
     Icon: DashboardIcon,
     label: 'Dashboard',
-    route: 'dfsfd'
+    route: DASHBOARD.DASHBOARD
   },
   {
     id: 2,

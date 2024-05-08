@@ -4,6 +4,7 @@ import AuthRoutes from '@features/authentication/routes';
 import { HOME, HOMEWORK_MANAGEMENT } from '@constants/routes';
 import MainLayout from '@layouts/main-layout/MainLayout';
 import HomeworkManagementRoutes from '@features/homework-management/routes';
+import DashboardRoutes from '@features/dashboard/routes';
 
 const protectedRoutes: RouteObject[] = [
   AuthRoutes,
@@ -13,7 +14,7 @@ const protectedRoutes: RouteObject[] = [
   },
   {
     element: <MainLayout />, // Outlet in MainLayout will be replaced by matching element from below
-    children: [...HomeworkManagementRoutes]
+    children: [...HomeworkManagementRoutes, ...DashboardRoutes]
   }
 ];
 
