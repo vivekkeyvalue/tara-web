@@ -6,8 +6,8 @@ export const sizeStyle = {
 
 export const inputStyles = {
   common:
-    'peer p-2 w-full border rounded-lg hover:border-grey focus:outline-none focus:border-primary focus-within:border-primary focus:shadow-inputShadow bg-grey10',
-  error: '!border-2 !border-error !bg-grey10'
+    'peer p-2 w-full border rounded-lg hover:border-grey focus:outline-none focus:border-primary focus-within:border-primary focus:shadow-inputShadow',
+  error: '!border-2 !border-error'
 };
 
 export const labelStyles = {

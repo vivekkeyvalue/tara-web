@@ -72,7 +72,7 @@ const OtpInput = ({
           ref={(element) => {
             inputRefs.current[index] = element as HTMLInputElement;
           }}
-          className="mr-2 size-12 rounded-lg border bg-grey10 text-center text-base font-normal text-content focus:border-primary focus:outline-none"
+          className="mr-2 size-12 rounded-lg border text-center text-base font-normal text-content focus:border-primary focus:outline-none"
         />
       ))}
     </div>

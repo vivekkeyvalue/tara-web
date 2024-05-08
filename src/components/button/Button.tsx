@@ -38,7 +38,7 @@ const labelStyles = {
   },
   secondary: {
     default: 'text-sm text-primary font-semibold',
-    disabled: '!text-grey40'
+    disabled: ''
   }
 };
 
