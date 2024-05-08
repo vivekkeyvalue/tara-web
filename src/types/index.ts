@@ -20,3 +20,7 @@ export type TokenResponse = {
 };
 
 export * from './requests';
+export * from './button';
+export * from './authentication';
+export * from './avatar';
+export * from './profile-settings';

@@ -1,6 +1,5 @@
 module.exports = {
-  '38px': '38px',
-  '22px': '22px'
+  5.5: '22px'
 };
 
 // Note: other available fontSizes as per style guide

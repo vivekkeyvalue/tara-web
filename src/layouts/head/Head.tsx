@@ -6,7 +6,7 @@ type HeadProps = {
 };
 
 const Head = ({ title = '', description = '' }: HeadProps = {}) => (
-  <Helmet title={title} defaultTitle="Cofee">
+  <Helmet title={title} defaultTitle="Tara">
     <meta name="description" content={description} />
   </Helmet>
 );

@@ -2,6 +2,7 @@
 
 const borderRadius = require('./themes/borderRadius');
 const fontSize = require('./themes/fontSizes');
+const colors = require('./themes/colors');
 
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
@@ -12,10 +13,7 @@ module.exports = {
         tablet: { min: '481px', max: '1024px' },
         desktop: { min: '1025px' }
       },
-      colors: {
-        bkg: 'hsl(var(--color-bkg) / <alpha-value>)',
-        content: 'hsl(var(--color-content) / <alpha-value>)'
-      },
+      colors,
       borderRadius,
       fontSize,
       borderWidth: {
@@ -31,6 +29,11 @@ module.exports = {
       margin: {
         '5px': '5px'
       },
+      spacing: {
+        22: '88px',
+        16: '64px',
+        68.5: '274px'
+      },
       boxShadow: {
         mediumBlur: '0px 4px 24px rgba(0, 0, 0, 0.1)',
         dropdownShadow: '0px 4px 24px rgba(10, 31, 68, 0.1)',
@@ -38,6 +41,12 @@ module.exports = {
       },
       fontFamily: {
         inter: ['Inter']
+      },
+      maxWidth: {
+        520: '520px'
+      },
+      minWidth: {
+        520: '520px'
       }
     }
   },
