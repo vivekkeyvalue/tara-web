@@ -27,11 +27,13 @@ module.exports = {
         352: '352px'
       },
       margin: {
-        '5px': '5px'
+        '5px': '5px',
+        257: '257px'
       },
       spacing: {
         22: '88px',
         16: '64px',
+        16.5: '66px',
         68.5: '274px'
       },
       boxShadow: {
@@ -46,7 +48,8 @@ module.exports = {
         520: '520px'
       },
       minWidth: {
-        520: '520px'
+        520: '520px',
+        257: '257px'
       }
     }
   },
