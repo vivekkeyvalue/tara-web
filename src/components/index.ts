@@ -7,6 +7,7 @@ import OtpInput from './otpInput/OtpInput';
 import Avatar from './avatar/Avatar';
 import ProfileSettings from './profile-settings/ProfileSettings';
 import SidebarItem from './sidebar-item/SidebarItem';
+import Stepper from './stepper/Stepper';
 
 export {
   Spinner,
@@ -17,5 +18,6 @@ export {
   OtpInput,
   Avatar,
   ProfileSettings,
-  SidebarItem
+  SidebarItem,
+  Stepper
 };

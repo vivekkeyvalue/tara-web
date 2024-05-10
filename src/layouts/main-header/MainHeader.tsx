@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { AUTH } from '@constants/routes';
+import Logo from '@assets/images/logo-black.svg';
 import { Avatar, Icon, ProfileSettings } from '@components';
 
 const MainHeader = () => {
@@ -20,7 +21,10 @@ const MainHeader = () => {
 
   return (
     <div className="h-auto w-full bg-theme text-content shadow-sm">
-      <div className="flex h-16 w-full items-center justify-end border-b border-l px-6 shadow-sm">
+      <div className="flex h-16 w-full items-center justify-between border-b border-l px-6 shadow-sm">
+        <div>
+          <img src={Logo} alt="logo" />
+        </div>
         <div className="flex gap-2">
           <div
             className="relative flex cursor-pointer items-center justify-center gap-2"
@@ -30,12 +34,12 @@ const MainHeader = () => {
           >
             <Avatar
               name="Test User"
-              className="size-10 rounded-full text-sm text-white"
+              className="size-8 rounded-full text-sm text-white"
               bgColor="#7C57FF"
             />
             <Icon
               name="down"
-              size="24"
+              size="medium"
               className={showUserSettings ? 'rotate-180' : 'rotate-0'}
             />
             {showUserSettings && (

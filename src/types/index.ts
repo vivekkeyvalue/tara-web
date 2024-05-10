@@ -24,3 +24,4 @@ export * from './button';
 export * from './authentication';
 export * from './avatar';
 export * from './profile-settings';
+export * from './stepper';
