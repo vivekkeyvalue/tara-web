@@ -1,9 +1,8 @@
 import { useRoutes, RouteObject } from 'react-router-dom';
-
-import routes from './routes';
+import TeacherRoutes from './routes';
 
 const AppRoutes = () => {
-  const routesConfig: RouteObject[] = routes;
+  const routesConfig: RouteObject[] = TeacherRoutes;
 
   const Routes = useRoutes([...routesConfig]);
 

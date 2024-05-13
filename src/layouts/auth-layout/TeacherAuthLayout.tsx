@@ -12,7 +12,7 @@ const backgroundStyle = {
   backgroundRepeat: 'no-repeat'
 };
 
-const AuthLayout = () => (
+const TeacherAuthLayout = () => (
   <div className="flex h-screen items-center" style={backgroundStyle}>
     <section className="relative flex size-full items-center justify-center bg-transparent align-middle sm:w-1/3 md:w-1/2">
       <img src={AuthLayoutImage} alt="login-layout-pic" />
@@ -33,4 +33,4 @@ const AuthLayout = () => (
   </div>
 );
 
-export default AuthLayout;
+export default TeacherAuthLayout;
