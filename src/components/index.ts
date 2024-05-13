@@ -8,6 +8,7 @@ import Avatar from './avatar/Avatar';
 import ProfileSettings from './profile-settings/ProfileSettings';
 import SidebarItem from './sidebar-item/SidebarItem';
 import Stepper from './stepper/Stepper';
+import Card from './card/Card';
 
 export {
   Spinner,
@@ -19,5 +20,6 @@ export {
   Avatar,
   ProfileSettings,
   SidebarItem,
-  Stepper
+  Stepper,
+  Card
 };

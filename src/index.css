@@ -9,6 +9,7 @@
     --color-content: #1c1c1d;
     --color-grey: #7e7e7e;
     --color-primary: #7c57ff;
+    --color-primaryLite: #f2eeff;
     --color-error: #e60000;
     /* ... */
   }
@@ -19,7 +20,7 @@
   }
 }
 
-.container {
+.wrapper {
   width: calc(100vw - 257px);
   margin-left: 257px;
   white-space: pre-wrap;
