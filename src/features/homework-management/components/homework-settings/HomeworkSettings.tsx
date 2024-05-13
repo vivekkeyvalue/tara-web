@@ -32,7 +32,7 @@ const HomeWorkSettings = () => {
           <div className="">{getlabel('Select Subject')}</div>
           <div className="flex gap-2">
             {['Maths'].map((value) => (
-              <Card value={value} handleSelect={() => {}} isSelected={false} />
+              <Card value={value} handleSelect={() => {}} isSelected />
             ))}
           </div>
         </div>

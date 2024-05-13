@@ -18,13 +18,15 @@ const wrapperStyles = `flex items-center rounded-lg justify-center text-body-sem
 const variantStyles = {
   primary: `bg-primary disabled:bg-primary disabled:opacity-50 hover:bg-primary60`,
   transparent: `bg-transparent`,
-  secondary: `bg-primaryLite1 border-primary disabled:bg-white disabled:border-grey30 border hover:border-primary60 hover:bg-white`
+  secondary: `bg-primaryLite1 border-primary disabled:bg-white disabled:border-grey30 border hover:border-primary60 hover:bg-white`,
+  primary_stud: `bg-gradient-to-r from-primary10 to-primary rounded-3xl disabled:bg-primary disabled:opacity-50 hover:bg-primary60`
 };
 
 const loadingStyles = {
   primary: `!bg-primary`,
   transparent: '',
-  secondary: '!bg-primaryLite1 border-primary border'
+  secondary: '!bg-primaryLite1 border-primary border',
+  primary_stud: `!bg-primary`
 };
 
 const labelStyles = {
@@ -39,13 +41,18 @@ const labelStyles = {
   secondary: {
     default: 'text-sm text-primary font-semibold',
     disabled: ''
+  },
+  primary_stud: {
+    default: 'text-base text-theme font-medium',
+    disabled: '!text-theme'
   }
 };
 
 const loadingLabelStyles = {
   primary: 'text-white text-body-semi invisible',
   transparent: 'invisible',
-  secondary: 'invisible'
+  secondary: 'invisible',
+  primary_stud: 'text-white text-body-semi invisible'
 };
 
 const sizeStyles = {
