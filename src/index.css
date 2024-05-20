@@ -28,10 +28,13 @@ body {
     --color-bgBase: #f7f9fb;
     --color-content: #1c1c1d;
     --color-grey: #7e7e7e;
+    --color-grey10: #787878;
     --color-primary: #7c57ff;
     --color-primary10: #a193ff;
     --color-primaryLite: #f2eeff;
     --color-error: #e60000;
+    --color-green: #659f51;
+    --color-yellow: #dd900d;
     /* ... */
   }
   :root[theme='dark'] {

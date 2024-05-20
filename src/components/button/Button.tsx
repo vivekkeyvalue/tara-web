@@ -13,20 +13,18 @@ import {
 import Spinner from '../spinner/Spinner';
 import theme from '../../../themes/colors';
 
-const wrapperStyles = `flex items-center rounded-lg justify-center text-body-semi disabled:cursor-not-allowed`;
+const wrapperStyles = `flex items-center rounded-3xl justify-center text-body-semi disabled:cursor-not-allowed`;
 
 const variantStyles = {
   primary: `bg-primary disabled:bg-primary disabled:opacity-50 hover:bg-primary60`,
   transparent: `bg-transparent`,
-  secondary: `bg-primaryLite1 border-primary disabled:bg-white disabled:border-grey30 border hover:border-primary60 hover:bg-white`,
-  primary_stud: `bg-gradient-to-r from-primary10 to-primary rounded-3xl disabled:bg-primary disabled:opacity-50 hover:bg-primary60`
+  secondary: `bg-primaryLite1 border-primary disabled:bg-white disabled:border-grey30 border hover:border-primary60 hover:bg-white`
 };
 
 const loadingStyles = {
   primary: `!bg-primary`,
   transparent: '',
-  secondary: '!bg-primaryLite1 border-primary border',
-  primary_stud: `!bg-primary`
+  secondary: '!bg-primaryLite1 border-primary border'
 };
 
 const labelStyles = {
@@ -41,18 +39,13 @@ const labelStyles = {
   secondary: {
     default: 'text-sm text-primary font-semibold',
     disabled: ''
-  },
-  primary_stud: {
-    default: 'text-base text-theme font-medium',
-    disabled: '!text-theme'
   }
 };
 
 const loadingLabelStyles = {
   primary: 'text-white text-body-semi invisible',
   transparent: 'invisible',
-  secondary: 'invisible',
-  primary_stud: 'text-white text-body-semi invisible'
+  secondary: 'invisible'
 };
 
 const sizeStyles = {

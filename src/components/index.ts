@@ -9,6 +9,9 @@ import ProfileSettings from './profile-settings/ProfileSettings';
 import SidebarItem from './sidebar-item/SidebarItem';
 import Stepper from './stepper/Stepper';
 import Card from './card/Card';
+import PageTitle from './page-title/PageTitle';
+import Tabs from './tabs/Tabs';
+import ProgressBar from './progress-bar/ProgressBar';
 
 export {
   Spinner,
@@ -21,5 +24,8 @@ export {
   ProfileSettings,
   SidebarItem,
   Stepper,
-  Card
+  Card,
+  PageTitle,
+  Tabs,
+  ProgressBar
 };

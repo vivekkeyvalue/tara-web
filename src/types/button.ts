@@ -1,8 +1,4 @@
-export type ButtonVariant =
-  | 'primary'
-  | 'transparent'
-  | 'secondary'
-  | 'primary_stud';
+export type ButtonVariant = 'primary' | 'transparent' | 'secondary';
 
 export type IconButtonSize = 'none' | 'small' | 'medium' | 'large';
 

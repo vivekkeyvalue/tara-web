@@ -1,8 +1,8 @@
+import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import { Avatar, SidebarItem } from '@components';
 import MENU_ITEMS from '@constants/sideMenu';
-import { useState } from 'react';
 import Logo from '@assets/images/logo-black.svg';
 import LogoLetter from '@assets/images/logo-letter.svg';
 import LogoutIcon from '@assets/icons/logout.svg';
@@ -36,7 +36,7 @@ const SideNavBar = () => {
       }`}
     >
       <div>
-        <div className="px-6 pb-6 pt-8">
+        <div className="h-12 px-6 pb-6 pt-8">
           <img
             src={Logo}
             alt="CoFee logo"

@@ -58,5 +58,8 @@ export default [
   'switch-to-org',
   'image-upload',
   'approve-disabled',
-  'reject-enabled'
+  'reject-enabled',
+  'total-homework',
+  'completed-students',
+  'class'
 ];

@@ -25,3 +25,5 @@ export * from './authentication';
 export * from './avatar';
 export * from './profile-settings';
 export * from './stepper';
+export * from './tabs';
+export * from './homework';
