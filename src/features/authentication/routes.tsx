@@ -2,17 +2,17 @@ import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
 import { AUTH } from '@constants/routes';
-import TeacherAuthLayout from '@layouts/auth-layout/TeacherAuthLayout';
+import AuthLayout from '@layouts/auth-layout/AuthLayout';
 
 const LoginPage = lazy(() => import('./pages/login/Login'));
 
-export const TeacherAuthRoutes: RouteObject = {
+export const AuthRoutes: RouteObject = {
   children: [
     {
-      element: <TeacherAuthLayout />,
+      element: <AuthLayout />,
       children: [{ path: AUTH.LOGIN, element: <LoginPage /> }]
     }
   ]
 };
 
-export default TeacherAuthRoutes;
+export default AuthRoutes;

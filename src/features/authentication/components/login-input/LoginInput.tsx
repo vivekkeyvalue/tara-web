@@ -19,7 +19,7 @@ const LoginInput = ({
   >
     <Input
       name="Mobile Number"
-      className="border-xl mb-6 mt-12 w-full"
+      className="border-xl mb-4 mt-12 w-full"
       value={email}
       onChange={handleChange}
       type="text"

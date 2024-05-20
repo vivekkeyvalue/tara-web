@@ -3,14 +3,12 @@ import { Outlet } from 'react-router-dom';
 
 import { Spinner } from '@components';
 import SideNavBar from '@layouts/side-nav/SIdeNav';
-import MainHeader from '@layouts/main-header/MainHeader';
 
 const MainLayout = () => (
   <div className="flex h-screen w-screen overflow-hidden">
     <div className="size-full">
-      <MainHeader />
       <SideNavBar />
-      <div className="pb-83 h-screen overflow-y-auto bg-bgBase">
+      <div className="pb-83 h-screen overflow-y-auto bg-primaryLite">
         <div className="wrapper">
           <Suspense
             fallback={

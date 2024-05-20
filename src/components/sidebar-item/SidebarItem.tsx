@@ -4,28 +4,30 @@ import clsx from 'clsx';
 import { SidebarItemProps } from './types';
 
 const SidebarItem = (props: SidebarItemProps) => {
-  const { isCurrentRoute, item, path } = props;
+  const { isCurrentRoute, item, path, isSidebarOpen } = props;
 
   const { id, Icon, label, route } = item;
 
-  const itemBorder = isCurrentRoute ? 'border-r-4 border-primary' : '';
+  const itemBackground = isCurrentRoute ? 'bg-primaryLite' : '';
   const itemColor = isCurrentRoute ? 'text-primary' : 'text-grey';
 
   return (
     <Link
       key={id}
       to={path || route}
-      className={`flex items-center gap-3 px-4 py-3 ${itemBorder}`}
+      className={`mx-4 flex items-center gap-3 rounded-lg py-3 pl-2 ${itemBackground}`}
     >
       <div>
         <Icon className={clsx('size-6', itemColor)} />
       </div>
-      <span
-        className={`truncate text-sm font-medium ${itemColor}
+      {isSidebarOpen && (
+        <span
+          className={`truncate pl-2 text-center text-base font-semibold ${itemColor}
       `}
-      >
-        {label}
-      </span>
+        >
+          {label}
+        </span>
+      )}
     </Link>
   );
 };

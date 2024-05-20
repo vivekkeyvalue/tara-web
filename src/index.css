@@ -2,19 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-.shantell-sans-font {
-  font-family: 'Shantell Sans', cursive;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings: 'BNCE' 0, 'INFM' 0, 'SPAC' 0;
-}
-
 .figtree-font {
   font-family: 'Figtree', sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  /* .no-spinners {
+    -moz-appearance: textfield;
+  }
+
+  .no-spinners::-webkit-outer-spin-button,
+  .no-spinners::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  } */
 }
 
 @layer base {
@@ -37,9 +42,11 @@
 }
 
 .wrapper {
-  width: calc(100vw - 257px);
-  margin-left: 257px;
+  width: calc(100vw - 72px);
+  margin-left: 72px;
   white-space: pre-wrap;
   padding: 26px 40px;
   height: 100%;
+  overflow-y: auto;
+  padding-bottom: 40px;
 }

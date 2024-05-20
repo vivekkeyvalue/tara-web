@@ -17,13 +17,15 @@ module.exports = {
       borderRadius,
       fontSize,
       borderWidth: {
-        DEFAULT: '1px',
+        1: '1px',
         0: '0px',
         2: '2px',
         4: '4px',
         8: '8px'
       },
       width: {
+        72: '72px',
+        270: '270px',
         352: '352px'
       },
       margin: {
@@ -31,6 +33,7 @@ module.exports = {
         257: '257px'
       },
       spacing: {
+        12.5: '50px',
         22: '88px',
         16: '64px',
         16.5: '66px',
