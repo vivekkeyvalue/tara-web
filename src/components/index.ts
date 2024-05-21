@@ -12,6 +12,7 @@ import Card from './card/Card';
 import PageTitle from './page-title/PageTitle';
 import Tabs from './tabs/Tabs';
 import ProgressBar from './progress-bar/ProgressBar';
+import Dropdown from './drop-down/Dropdown';
 
 export {
   Spinner,
@@ -27,5 +28,6 @@ export {
   Card,
   PageTitle,
   Tabs,
-  ProgressBar
+  ProgressBar,
+  Dropdown
 };

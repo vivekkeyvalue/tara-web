@@ -27,3 +27,4 @@ export * from './profile-settings';
 export * from './stepper';
 export * from './tabs';
 export * from './homework';
+export * from './dropdown';

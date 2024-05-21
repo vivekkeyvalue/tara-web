@@ -9,7 +9,7 @@ const Homeworks = lazy(
 
 export const HomeworkManagementRoutes: RouteObject[] = [
   {
-    path: HOMEWORK_MANAGEMENT.CREATE_HOMEWORK,
+    path: HOMEWORK_MANAGEMENT.HOMEWORKS,
     element: <Homeworks />
   }
 ];

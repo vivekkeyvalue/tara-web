@@ -4,6 +4,8 @@ module.exports = {
   content: 'var(--color-content)',
   grey: 'var(--color-grey)',
   grey10: 'var(--color-grey10)',
+  grey20: 'var(--color-grey20)',
+  grey30: 'var(--color-grey30)',
   primary: 'var(--color-primary)',
   primary10: 'var(--color-primary10)',
   primaryLite: 'var(--color-primaryLite)',

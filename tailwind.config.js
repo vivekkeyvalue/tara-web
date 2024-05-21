@@ -17,6 +17,7 @@ module.exports = {
       borderRadius,
       fontSize,
       borderWidth: {
+        0.5: '0.1px',
         1: '1px',
         0: '0px',
         2: '2px',
@@ -25,6 +26,7 @@ module.exports = {
       },
       width: {
         72: '72px',
+        150: '150px',
         270: '270px',
         352: '352px'
       },

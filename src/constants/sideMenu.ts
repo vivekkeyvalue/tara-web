@@ -13,7 +13,7 @@ const MENU_ITEMS = [
     id: 2,
     Icon: HomeWorkIcon,
     label: 'Manage Homework',
-    route: HOMEWORK_MANAGEMENT.CREATE_HOMEWORK
+    route: HOMEWORK_MANAGEMENT.HOMEWORKS
   }
 ];
 

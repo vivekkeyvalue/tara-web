@@ -4,8 +4,9 @@ import HomeworkLabel from '../homework-label/HomeworkLabel';
 
 import theme from '../../../../../themes/colors';
 
+// props needs to be added
 const HomeworkCard = () => (
-  <div className="cursor-pointer rounded-lg bg-theme  p-6 shadow-sm transition-transform duration-300 ease-in-out hover:scale-105 md:w-[calc(33%-8px)] lg:w-[calc(25%-12px)]">
+  <div className="cursor-pointer rounded-lg bg-theme  p-6 shadow-sm transition-transform duration-300 ease-in-out hover:scale-105 md:w-[calc(33%-14px)] lg:w-[calc(25%-18px)]">
     <div className="mb-2 flex items-center justify-between">
       <div className="rounded-lg bg-primaryLite p-2 text-sm font-normal">
         Maths
@@ -18,13 +19,13 @@ const HomeworkCard = () => (
     </div>
     <div className="text-grey10 flex justify-between text-sm font-normal">
       <div>18 Submitted</div>
-      <div>4 Pending</div>
+      <div>2 Pending</div>
     </div>
     <ProgressBar
       height={10}
       bgColor={theme.primaryLite}
       progressBarcolor={theme.primary}
-      progress={50}
+      progress={90}
     />
   </div>
 );

@@ -2,8 +2,13 @@ import { useState } from 'react';
 
 import { TabPill } from '@types';
 import Head from '@layouts/head/Head';
-import { PageTitle, Tabs } from '@components';
-import { homeworkTabs } from '@features/homework-management/constants';
+import { Dropdown, PageTitle, Tabs } from '@components';
+import {
+  dummySubjectOptions,
+  homeworkFilterOptions,
+  homeworkTabs,
+  infoCardOptions
+} from '@features/homework-management/constants';
 import InfoCard from '@features/homework-management/components/info-card/InfoCard';
 import HomeworkCard from '@features/homework-management/components/homework-card/HomeworkCard';
 
@@ -11,13 +16,25 @@ import theme from '../../../../../themes/colors';
 
 const CreateHomeWork = () => {
   const [selectedTab, setSelectedTab] = useState<TabPill>(homeworkTabs[0]);
+  const [selectedFilter, setSelectedFilter] = useState<any>({
+    subject: '',
+    level: '',
+    topic: '',
+    skill: ''
+  });
+
+  const onSelectFilter = (filter: string, value: string) => {
+    setSelectedFilter((prevFilter: any) => ({
+      ...prevFilter,
+      [filter]: value
+    }));
+  };
 
   const handleCreateHomework = () => {};
 
   const onSelectTab = (tab: TabPill) => {
     setSelectedTab(tab);
   };
-
   return (
     <>
       <Head title="Homeworks" />
@@ -31,26 +48,39 @@ const CreateHomeWork = () => {
         primaryButtonStroke={theme.theme}
       />
       <div className="mb-6 mt-16 flex flex-wrap gap-6">
-        <InfoCard
-          label="Total Homeworks"
-          value="10"
-          iconName="total-homework"
-        />
-        <InfoCard
-          label="Students Completed"
-          value="13"
-          iconName="completed-students"
-        />
-        <InfoCard label="Classes" value="3" iconName="class" />
+        {infoCardOptions.map((info) => (
+          <InfoCard
+            key={info.id}
+            label={info.label}
+            iconName={info.iconName}
+            value={info.value}
+          />
+        ))}
       </div>
-      <div className="w-fit">
-        <Tabs
-          tabs={homeworkTabs}
-          selectedTab={selectedTab}
-          onTabSelect={onSelectTab}
-        />
+      <div className="flex items-center justify-between">
+        <div className="w-fit">
+          <Tabs
+            tabs={homeworkTabs}
+            selectedTab={selectedTab}
+            onTabSelect={onSelectTab}
+          />
+        </div>
+        <div className="flex items-center justify-center gap-2">
+          {homeworkFilterOptions.map((item) => (
+            <Dropdown
+              currentFilter={selectedFilter[item.value] || ''}
+              filterOptions={dummySubjectOptions}
+              onSelectFilter={(value) => onSelectFilter(item.value, value)}
+              className="w-150"
+              optionsStyle="w-full"
+              placeholder={item.label}
+            />
+          ))}
+        </div>
       </div>
-      <div className="mt-6 flex flex-wrap gap-4">
+
+      {/* TODO: to be removed */}
+      <div className="mt-6 flex flex-wrap gap-6">
         <HomeworkCard />
         <HomeworkCard />
         <HomeworkCard />

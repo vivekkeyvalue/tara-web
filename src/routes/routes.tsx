@@ -10,7 +10,7 @@ const PrivateRoutes: RouteObject[] = [
   AuthRoutes,
   {
     path: HOME.HOME,
-    element: <Navigate to={HOMEWORK_MANAGEMENT.CREATE_HOMEWORK} /> // Re-route from '/' to '/order-management/orders'
+    element: <Navigate to={HOMEWORK_MANAGEMENT.HOMEWORKS} /> // Re-route from '/' to '/order-management/orders'
   },
   {
     element: <MainLayout />, // Outlet in MainLayout will be replaced by matching element from below

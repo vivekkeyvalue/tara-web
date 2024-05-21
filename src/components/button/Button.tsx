@@ -18,13 +18,16 @@ const wrapperStyles = `flex items-center rounded-3xl justify-center text-body-se
 const variantStyles = {
   primary: `bg-primary disabled:bg-primary disabled:opacity-50 hover:bg-primary60`,
   transparent: `bg-transparent`,
-  secondary: `bg-primaryLite1 border-primary disabled:bg-white disabled:border-grey30 border hover:border-primary60 hover:bg-white`
+  secondary: `bg-primaryLite1 border-primary disabled:bg-white disabled:border-grey30 border hover:border-primary60 hover:bg-white`,
+  tertiary:
+    'bg-transparent border border-grey30 rounded-xl hover:border-primary'
 };
 
 const loadingStyles = {
   primary: `!bg-primary`,
   transparent: '',
-  secondary: '!bg-primaryLite1 border-primary border'
+  secondary: '!bg-primaryLite1 border-primary border',
+  tertiary: ''
 };
 
 const labelStyles = {
@@ -39,13 +42,18 @@ const labelStyles = {
   secondary: {
     default: 'text-sm text-primary font-semibold',
     disabled: ''
+  },
+  tertiary: {
+    default: 'text-base text-content font-medium',
+    disabled: ''
   }
 };
 
 const loadingLabelStyles = {
   primary: 'text-white text-body-semi invisible',
   transparent: 'invisible',
-  secondary: 'invisible'
+  secondary: 'invisible',
+  tertiary: 'invisible'
 };
 
 const sizeStyles = {
@@ -75,7 +83,8 @@ export const ButtonLabel: React.FC<ButtonLabelProps> = ({
     className={clsx(
       loading ? loadingLabelStyles[variant] : labelStyles[variant].default,
       className,
-      disabled && labelStyles[variant].disabled
+      disabled && labelStyles[variant].disabled,
+      'truncate'
     )}
   >
     {label}
