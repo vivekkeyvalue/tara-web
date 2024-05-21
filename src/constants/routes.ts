@@ -7,7 +7,8 @@ export const HOME = {
 };
 
 export const HOMEWORK_MANAGEMENT = {
-  HOMEWORKS: '/homeworks'
+  HOMEWORKS: '/homeworks',
+  PREVIEW: '/homeworks/preview'
 };
 
 export const DASHBOARD = {

@@ -15,6 +15,7 @@ export interface DropdownProps {
   labelStyle?: string;
   isLoading?: boolean;
   placeholder?: string;
+  placeholderStyle?: string;
 }
 
 export interface MultiSelectDropdownProps {

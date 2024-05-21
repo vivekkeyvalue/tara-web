@@ -16,7 +16,8 @@ const Dropdown = (props: DropdownProps) => {
     optionsStyle,
     labelStyle,
     isLoading,
-    placeholder
+    placeholder,
+    placeholderStyle
   } = props;
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
 
@@ -71,7 +72,7 @@ const Dropdown = (props: DropdownProps) => {
           className={`min-w-166 justify-between ${className}`}
           labelStyle={
             placeholder && !selectedFilter?.label
-              ? 'text-sm text-grey40'
+              ? `text-sm text-grey40 ${placeholderStyle}`
               : `!font-normal ${labelStyle || ''}`
           }
           rightIconStyle={isDropdownOpen ? 'rotate-180' : ''}

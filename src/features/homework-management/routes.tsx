@@ -7,10 +7,18 @@ const Homeworks = lazy(
   () => import('@features/homework-management/pages/homeworks/Homeworks')
 );
 
+const Preview = lazy(
+  () => import('@features/homework-management/pages/preview/Preview')
+);
+
 export const HomeworkManagementRoutes: RouteObject[] = [
   {
     path: HOMEWORK_MANAGEMENT.HOMEWORKS,
     element: <Homeworks />
+  },
+  {
+    path: HOMEWORK_MANAGEMENT.PREVIEW,
+    element: <Preview />
   }
 ];
 
