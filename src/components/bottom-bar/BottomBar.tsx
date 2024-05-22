@@ -13,7 +13,7 @@ const BottomBar = ({
   handleSecondaryButtonClick,
   handlePrimaryButtonClick
 }: BottomBarProps) => (
-  <div className="fixed bottom-0 left-0 flex h-[65px] w-full items-center justify-between bg-theme pl-120 pr-10 shadow-lg">
+  <div className="fixed bottom-0 left-0 flex h-65 w-full items-center justify-between bg-theme pl-120 pr-14 shadow-lg">
     <Button
       variant="tertiary"
       label={secondaryButtonLabel}

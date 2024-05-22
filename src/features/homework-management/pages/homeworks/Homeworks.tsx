@@ -85,6 +85,7 @@ const CreateHomeWork = () => {
         <div className="flex items-center justify-center gap-2">
           {homeworkFilterOptions.map((item) => (
             <Dropdown
+              key={item.id}
               currentFilter={selectedFilter[item.value] || ''}
               filterOptions={dummySubjectOptions}
               onSelectFilter={(value) => onSelectFilter(item.value, value)}

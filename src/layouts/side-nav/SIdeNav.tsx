@@ -89,7 +89,7 @@ const SideNavBar = () => {
               } flex justify-between`}
             >
               <div
-                className={`flex w-[177px] flex-col justify-center truncate  break-words pt-1 `}
+                className={`flex w-177 flex-col justify-center truncate  break-words pt-1 `}
               >
                 <div className="overflow-hidden text-ellipsis text-sm font-medium">
                   Test User

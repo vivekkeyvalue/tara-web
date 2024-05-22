@@ -27,8 +27,12 @@ module.exports = {
       width: {
         72: '72px',
         150: '150px',
+        177: '177px',
         270: '270px',
         352: '352px'
+      },
+      height: {
+        65: '65px'
       },
       margin: {
         '5px': '5px',

@@ -41,7 +41,7 @@ export const homeworkFilterOptions = [
     value: 'subject'
   },
   {
-    id: 12,
+    id: 2,
     label: 'Level',
     value: 'level'
   },
@@ -51,7 +51,7 @@ export const homeworkFilterOptions = [
     value: 'topic'
   },
   {
-    id: 1,
+    id: 4,
     label: 'Skill',
     value: 'skill'
   }
