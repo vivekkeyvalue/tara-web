@@ -17,7 +17,7 @@ const HomeworkCard = () => (
     <div className="border-greyLite my-3 w-fit rounded-xl border px-2 py-1">
       3A
     </div>
-    <div className="text-grey10 flex justify-between text-sm font-normal">
+    <div className="flex justify-between text-sm font-normal text-grey10">
       <div>18 Submitted</div>
       <div>2 Pending</div>
     </div>
@@ -26,6 +26,7 @@ const HomeworkCard = () => (
       bgColor={theme.primaryLite}
       progressBarcolor={theme.primary}
       progress={90}
+      progressBarStyle="!bg-gradient-to-r from-primary10 to-primary"
     />
   </div>
 );
