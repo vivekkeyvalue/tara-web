@@ -24,7 +24,7 @@ const PageTitle = (props: PageTitleProps) => {
     <div className={`flex items-center justify-between ${className || ''}`}>
       <div>
         <h1 className="text-2xl font-bold text-content">{title}</h1>
-        <div className="text-grey10 mt-2 text-sm font-normal">
+        <div className="mt-2 text-sm font-normal text-grey10">
           {description}
         </div>
       </div>

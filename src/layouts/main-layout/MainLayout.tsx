@@ -8,7 +8,7 @@ const MainLayout = () => (
   <div className="flex h-screen w-screen overflow-hidden">
     <div className="size-full">
       <SideNavBar />
-      <div className="pb-83 h-screen overflow-y-auto bg-primaryLite">
+      <div className="h-screen overflow-y-auto bg-primaryLite">
         <div className="wrapper">
           <Suspense
             fallback={

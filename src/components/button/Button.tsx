@@ -32,19 +32,19 @@ const loadingStyles = {
 
 const labelStyles = {
   primary: {
-    default: 'text-base text-theme font-medium',
+    default: 'text-base text-theme font-normal',
     disabled: '!text-theme'
   },
   transparent: {
-    default: 'text-base text-primary font-medium',
+    default: 'text-base text-primary font-normal',
     disabled: ''
   },
   secondary: {
-    default: 'text-sm text-primary font-semibold',
+    default: 'text-sm text-primary font-normal',
     disabled: ''
   },
   tertiary: {
-    default: 'text-base text-content font-medium',
+    default: 'text-sm text-content font-normal',
     disabled: ''
   }
 };

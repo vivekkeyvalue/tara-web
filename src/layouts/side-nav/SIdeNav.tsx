@@ -70,7 +70,7 @@ const SideNavBar = () => {
       </div>
       <div
         className={`relative ${
-          isSidebarOpen ? 'border-grey10 border-t-1' : ''
+          isSidebarOpen ? 'border-t-1 border-grey40' : ''
         }`}
       >
         <div

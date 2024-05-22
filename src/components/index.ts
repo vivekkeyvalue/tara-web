@@ -13,6 +13,7 @@ import PageTitle from './page-title/PageTitle';
 import Tabs from './tabs/Tabs';
 import ProgressBar from './progress-bar/ProgressBar';
 import Dropdown from './drop-down/Dropdown';
+import BottomBar from './bottom-bar/BottomBar';
 
 export {
   Spinner,
@@ -29,5 +30,6 @@ export {
   PageTitle,
   Tabs,
   ProgressBar,
-  Dropdown
+  Dropdown,
+  BottomBar
 };

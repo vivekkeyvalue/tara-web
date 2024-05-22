@@ -41,6 +41,10 @@ module.exports = {
         16.5: '66px',
         68.5: '274px'
       },
+      padding: {
+        50: '50px',
+        120: '120px'
+      },
       boxShadow: {
         mediumBlur: '0px 4px 24px rgba(0, 0, 0, 0.1)',
         dropdownShadow: '0px 4px 24px rgba(10, 31, 68, 0.1)',

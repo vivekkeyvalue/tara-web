@@ -12,5 +12,7 @@ module.exports = {
   primaryLite: 'var(--color-primaryLite)',
   error: 'var(--color-error)',
   green: 'var(--color-green)',
-  yellow: 'var(--color-yellow)'
+  yellow: 'var(--color-yellow)',
+  pink: 'var(--color-pink)',
+  blue: 'var(--color-blue)'
 };

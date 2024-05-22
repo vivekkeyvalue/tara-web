@@ -1,5 +1,5 @@
 import Head from '@layouts/head/Head';
-import { PageTitle } from '@components';
+import { BottomBar, PageTitle } from '@components';
 import QuestionCard from '@features/homework-management/components/question-card/QuestionCard';
 
 // eslint-disable-next-line arrow-body-style
@@ -18,6 +18,12 @@ const Preview = () => {
           </div>
         ))}
       </div>
+      <BottomBar
+        handlePrimaryButtonClick={() => {}}
+        handleSecondaryButtonClick={() => {}}
+        primaryButtonLabel="Distribute"
+        secondaryButtonLabel="Back"
+      />
     </>
   );
 };
